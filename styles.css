@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Courier New", Impact;
+}
+
+.root{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8b0000;
+    flex-direction: column;
+}
+
+.inner-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 600px;
+    background-color: #fffafa;
+    border: 5px solid #f4c430;
+}
+
+.pads{
+    margin: 20px;
+    border-right: 1px solid #f4c430;
+}
+
+.controls{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    align-items: center;
+}
+
+.drum-pad{
+    background-color:#f4c430;
+    font-size: 20px;
+    font-weight: bold;
+    color: #800000;
+    border-radius: 8px;
+    width: 90px;
+    height: 90px;
+    margin: 10px 10px 0px 0px;
+    box-shadow: gray 3px 3px 3px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#display{
+    width: 200px;
+    height: 50px;
+    background-color: #e7e7e7;
+    margin: 15px auto;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.select{ 
+    background-color: black;
+    width: 50px;
+    height: 20px;
+    padding: 1px;
+}
+
+.inner{
+    background-color: #f4c430;
+    width: 23px;
+    height: 16px;
+    margin: 1px 1px 1px;
+    cursor: pointer;
+}
+
+.control{
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input[type="range" i] {
+    appearance: auto;
+    cursor:pointer;
+    color: rgb(160, 91, 13);
+    padding: initial;
+    border: initial;
+    margin: 2px;
+}
