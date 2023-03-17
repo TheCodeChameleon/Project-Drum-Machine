@@ -14,6 +14,7 @@
     flex-direction: column;
 }
 
+
 .inner-container{
     display: flex;
     justify-content: space-between;
@@ -24,7 +25,7 @@
     border: 5px solid #f4c430;
 }
 
-.pads{
+#pads{
     margin: 20px;
     border-right: 1px solid #f4c430;
 }
@@ -59,34 +60,8 @@
     padding: 15px;
     box-sizing: border-box;
     margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
 }
 
-.select{ 
-    background-color: black;
-    width: 50px;
-    height: 20px;
-    padding: 1px;
-}
 
-.inner{
-    background-color: #f4c430;
-    width: 23px;
-    height: 16px;
-    margin: 1px 1px 1px;
-    cursor: pointer;
-}
-
-.control{
-    margin-bottom: 20px;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-input[type="range" i] {
-    appearance: auto;
-    cursor:pointer;
-    color: rgb(160, 91, 13);
-    padding: initial;
-    border: initial;
-    margin: 2px;
-}

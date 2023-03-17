@@ -1,5 +1,3 @@
-
-
 function App(){
   const [activeKey, setActiveKey] = React.useState('')
    React.useEffect(() => {
@@ -59,16 +57,25 @@ function App(){
 
     function playSound(selector){
         const audio = document.getElementById(selector)
+        audio.currentTime = 0;
         audio.play()
         setActiveKey(selector)
+        Display(selector)
     }
+
+
+    function Display(set){
+        const disp = document.getElementById("display")
+        disp.innerText = set
+     }
 
     return(
         <div>
             {audioClips.map((clips) => 
             <div onClick={() => {
-                playSound(clips.keyTrigger)
-            }} className="drum-pad" id={audioClips.keyTrigger}>
+                playSound(clips.keyTrigger)     
+            }} 
+            className="drum-pad" id={audioClips.keyTrigger}>
                 {clips.keyTrigger}
                 <audio 
                 className="clip" id={clips.keyTrigger} src={clips.url}>
@@ -79,4 +86,3 @@ function App(){
 }
 
 ReactDOM.render(<App/>, document.getElementById("pads"))
-
