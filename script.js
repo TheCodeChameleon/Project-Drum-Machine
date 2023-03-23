@@ -73,7 +73,8 @@ function App(){
         <div>
             {audioClips.map((clips) => 
             <div onClick={() => {
-                playSound(clips.keyTrigger)     
+                playSound(clips.keyTrigger) 
+                Display(clips.class)    
             }} 
             className="drum-pad" id={audioClips.keyTrigger}>
                 {clips.keyTrigger}
