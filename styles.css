@@ -1,124 +1,136 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Courier New", Impact;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Impact;
+  text-align: center;
 }
 
-body{
-    background-color: #8b0000;
+body {
+  background-color: #8b0000;
 }
 
-.root{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.root {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-
-.inner-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    width: 600px;
-    background-color: #fffafa;
-    border: 5px solid #f4c430;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+.inner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 50vw;
+  height: 60vh;
+  background-color: #fffafa;
+  border: 5px solid #f4c430;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
-#pads{
-    margin: 20px;
-    border-right: 1px solid #f4c430;
+#pads {
+  margin: 20px;
+  border-right: 1px solid #f4c430;
 }
 
-.controls{
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    align-items: center;
+.controls {
+  display: flex;
+  flex-direction: column;
+  margin: 2vw;
+  align-items: center;
 }
 
-.drum-pad{
-    background-color:#f4c430;
-    font-size: 20px;
-    font-weight: bold;
-    color: #800000;
-    border-radius: 8px;
+.drum-pad {
+  background-color: #f4c430;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #800000;
+  border-radius: 8px;
+  margin: 3px;
+  width: 110px;
+  height: 110px;
+  box-shadow: gray 3px 3px 3px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#display {
+  width: 10vw;
+  height: 50px;
+  font-size: 1rem;
+  background-color: #e7e7e7;
+  margin: 0 auto;
+  padding: 10%;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #f4c430;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+@media only screen and (max-width: 1110px) {
+  html {
+    font-size: 14px;
+  }
+
+  .drum-pad {
     width: 90px;
     height: 90px;
-    margin: 10px 10px 0px 0px;
-    box-shadow: gray 3px 3px 3px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+  }
 }
 
-#display{
-    width: 200px;
-    height: 50px;
-    background-color: #e7e7e7;
-    margin: 15px auto;
-    padding: 15px;
-    box-sizing: border-box;
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
+@media only screen and (max-width: 980px) {
+  html {
+    font-size: 12px;
+  }
 }
 
-
-@media screen and (max-width: 600px){
-    .inner-container{
-        width: 90%;
-        height: auto;
-    }
-
+@media only screen and (max-width: 860px) {
+  .drum-pad {
+    width: 70px;
+    height: 70px;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .drum-pad {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media only screen and (max-width: 695px) {
+  .drum-pad {
+    width: 40px;
+    height: 40px;
+  }
 }
 
-@media screen and (max-width: 500px){
-    .inner-container{
-        width: 90%;
-        height: auto;
-    }
+@media only screen and (max-width: 560px) {
+  html {
+    font-size: 9px;
+  }
 
-    .drum-pad{
-        width: 90%;
-        height: 90%;
-    } 
+  .inner-container {
+    width: 80vw;
+  }
 
-    #display{
-        max-width: 50%;
-    }
-
-    
+  .drum-pad {
+    width: 80px;
+    height: 80px;
+  }
 }
 
-@media screen and (max-width: 400px){
-    .inner-container{
-        width: 90%;
-        height: auto;
-    }
-
-    .drum-pad{
-        width: 90%;
-        height: 90%;
-    } 
-
-    #display{
-        max-width: 50%;
-    }
-
-    
-}
-
-.footer a{
-    text-decoration: none;
-    color: #f4c430;
-}
-
-a:hover{
-    text-decoration: none;
-    color: white;
+@media only screen and (max-width: 473px) {
+  .drum-pad {
+    width: 45px;
+    height: 45px;
+  }
 }
